@@ -1,0 +1,246 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ali Sabah Wadi animated profile header</title>
+  <desc id="desc">Animated dark cyber-style GitHub header with name, role, and moving tech nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07111E"/>
+      <stop offset="0.5" stop-color="#091827"/>
+      <stop offset="1" stop-color="#050C15"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19E3FF" stop-opacity="0.08"/>
+      <stop offset="0.5" stop-color="#19E3FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#6BE8FF" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1DD3F8"/>
+      <stop offset="1" stop-color="#76F3FF"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .fadeLine { opacity: 0.18; stroke: #1FE3FF; }
+      .thin { stroke-width: 1; }
+      .pulse { animation: pulse 3.4s ease-in-out infinite; }
+      .pulse2 { animation: pulse 4.2s ease-in-out infinite 0.6s; }
+      .pulse3 { animation: pulse 5s ease-in-out infinite 1.2s; }
+      .float1 { animation: float1 6s ease-in-out infinite; }
+      .float2 { animation: float2 7.5s ease-in-out infinite; }
+      .float3 { animation: float3 5.8s ease-in-out infinite; }
+      .scan {
+        animation: scan 4.8s linear infinite;
+        transform-origin: center;
+      }
+      .blink { animation: blink 2.4s step-start infinite; }
+      .dash { stroke-dasharray: 5 8; animation: dash 18s linear infinite; }
+      .typingDot1 { animation: dot 1.2s infinite; }
+      .typingDot2 { animation: dot 1.2s infinite 0.2s; }
+      .typingDot3 { animation: dot 1.2s infinite 0.4s; }
+      .gridPulse { animation: gridPulse 7s ease-in-out infinite; }
+      .barA { animation: growA 4.5s ease-in-out infinite; transform-origin: left center; }
+      .barB { animation: growB 5s ease-in-out infinite; transform-origin: left center; }
+      .barC { animation: growC 4s ease-in-out infinite; transform-origin: left center; }
+      @keyframes pulse {
+        0%,100% { opacity: 0.35; }
+        50% { opacity: 1; }
+      }
+      @keyframes float1 {
+        0%,100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-7px) translateX(5px); }
+      }
+      @keyframes float2 {
+        0%,100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(6px) translateX(-4px); }
+      }
+      @keyframes float3 {
+        0%,100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      @keyframes scan {
+        0% { transform: translateX(-360px); opacity: 0; }
+        10% { opacity: 0.75; }
+        50% { opacity: 0.25; }
+        90% { opacity: 0.75; }
+        100% { transform: translateX(360px); opacity: 0; }
+      }
+      @keyframes blink {
+        0%, 45%, 100% { opacity: 0.18; }
+        50%, 80% { opacity: 1; }
+      }
+      @keyframes dash {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -500; }
+      }
+      @keyframes dot {
+        0%, 80%, 100% { opacity: 0.18; }
+        40% { opacity: 1; }
+      }
+      @keyframes gridPulse {
+        0%,100% { opacity: 0.15; }
+        50% { opacity: 0.32; }
+      }
+      @keyframes growA {
+        0%,100% { transform: scaleX(0.72); }
+        50% { transform: scaleX(1); }
+      }
+      @keyframes growB {
+        0%,100% { transform: scaleX(0.55); }
+        50% { transform: scaleX(0.9); }
+      }
+      @keyframes growC {
+        0%,100% { transform: scaleX(0.62); }
+        50% { transform: scaleX(0.84); }
+      }
+      text, tspan {
+        font-family: Inter, Segoe UI, Arial, sans-serif;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="22" fill="url(#bg)"/>
+  <rect x="10" y="10" width="1180" height="300" rx="18" stroke="#123149" stroke-opacity="0.8"/>
+
+  <!-- subtle grid -->
+  <g class="gridPulse">
+    <path d="M75 45H510" class="fadeLine thin"/>
+    <path d="M75 80H470" class="fadeLine thin"/>
+    <path d="M75 115H520" class="fadeLine thin"/>
+    <path d="M75 150H455" class="fadeLine thin"/>
+    <path d="M75 185H490" class="fadeLine thin"/>
+    <path d="M75 220H445" class="fadeLine thin"/>
+    <path d="M75 255H525" class="fadeLine thin"/>
+    <path d="M75 290H460" class="fadeLine thin"/>
+    <path d="M75 45V290" class="fadeLine thin"/>
+    <path d="M145 45V290" class="fadeLine thin"/>
+    <path d="M215 45V290" class="fadeLine thin"/>
+    <path d="M285 45V290" class="fadeLine thin"/>
+    <path d="M355 45V290" class="fadeLine thin"/>
+    <path d="M425 45V290" class="fadeLine thin"/>
+    <path d="M495 45V290" class="fadeLine thin"/>
+  </g>
+
+  <!-- content card -->
+  <g>
+    <rect x="54" y="48" width="650" height="220" rx="16" fill="#08131F" fill-opacity="0.76" stroke="#15344A"/>
+    <rect x="73" y="69" width="180" height="6" rx="3" fill="#0E2435"/>
+    <circle cx="85" cy="72" r="2" fill="#1DD3F8" class="pulse"/>
+    <text x="96" y="76" font-size="13" fill="#93AEC2">asws-cs/README.md</text>
+    <text x="590" y="76" font-size="12" fill="#6E879B">2026 // profile header</text>
+
+    <text x="76" y="121" font-size="44" font-weight="700" fill="#F1F7FD">Ali Sabah Wadi</text>
+    <text x="79" y="148" font-size="17" font-weight="700" letter-spacing="3.5" fill="#21D5F5">CYBERSECURITY ENGINEERING</text>
+    <text x="79" y="171" font-size="14" letter-spacing="1.8" fill="#80A2B8">Full-Stack Development · Secure Software · CTF</text>
+
+    <g>
+      <rect x="79" y="192" width="56" height="20" rx="10" fill="#0D2736" stroke="#164459"/>
+      <text x="93" y="206" font-size="11" fill="#E3F8FF">Iraq</text>
+      <rect x="144" y="192" width="88" height="20" rx="10" fill="#0D2736" stroke="#164459"/>
+      <text x="159" y="206" font-size="11" fill="#E3F8FF">HIUC</text>
+      <rect x="241" y="192" width="132" height="20" rx="10" fill="#0D2736" stroke="#164459"/>
+      <text x="257" y="206" font-size="11" fill="#E3F8FF">TypeScript</text>
+      <rect x="382" y="192" width="98" height="20" rx="10" fill="#0D2736" stroke="#164459"/>
+      <text x="399" y="206" font-size="11" fill="#E3F8FF">Next.js</text>
+      <rect x="489" y="192" width="92" height="20" rx="10" fill="#0D2736" stroke="#164459"/>
+      <text x="506" y="206" font-size="11" fill="#E3F8FF">Electron</text>
+    </g>
+
+    <path d="M79 228H611" stroke="#16374B"/>
+    <text x="79" y="251" font-size="12" fill="#7D9AB0">Building secure, practical systems for real-world problems</text>
+    <circle cx="353" cy="247" r="1.8" fill="#20D8F7" class="typingDot1"/>
+    <circle cx="361" cy="247" r="1.8" fill="#20D8F7" class="typingDot2"/>
+    <circle cx="369" cy="247" r="1.8" fill="#20D8F7" class="typingDot3"/>
+  </g>
+
+  <!-- right network visual -->
+  <g transform="translate(764 58)">
+    <rect x="0" y="0" width="364" height="204" rx="18" fill="#07111A" stroke="#153449"/>
+    <rect x="26" y="20" width="314" height="164" rx="12" fill="#081723" stroke="#122E41"/>
+
+    <path d="M40 99H320" stroke="#103246" stroke-width="1" class="dash"/>
+    <path d="M60 39V152" stroke="#103246" stroke-width="1" class="dash"/>
+    <path d="M160 27V174" stroke="#103246" stroke-width="1" class="dash"/>
+    <path d="M270 39V152" stroke="#103246" stroke-width="1" class="dash"/>
+
+    <g class="scan" filter="url(#bigGlow)">
+      <rect x="18" y="18" width="90" height="150" rx="10" fill="url(#accent)" fill-opacity="0.08"/>
+    </g>
+
+    <g stroke="url(#line)" stroke-width="2" fill="none" filter="url(#softGlow)">
+      <path d="M52 116 L109 74 L165 106 L224 58 L285 92"/>
+      <path d="M109 74 L166 46 L224 58" opacity="0.55"/>
+      <path d="M165 106 L195 144 L254 132 L285 92" opacity="0.55"/>
+    </g>
+
+    <g>
+      <g class="float1">
+        <circle cx="52" cy="116" r="5" fill="#21D5F5" filter="url(#softGlow)"/>
+        <circle cx="52" cy="116" r="13" fill="none" stroke="#21D5F5" stroke-opacity="0.35" class="pulse"/>
+      </g>
+      <g class="float2">
+        <rect x="101" y="66" width="16" height="16" rx="3" fill="#081723" stroke="#21D5F5"/>
+        <circle cx="109" cy="74" r="3.3" fill="#21D5F5" class="pulse2"/>
+      </g>
+      <g class="float3">
+        <circle cx="166" cy="46" r="4" fill="#21D5F5" filter="url(#softGlow)"/>
+        <circle cx="166" cy="46" r="10" fill="none" stroke="#21D5F5" stroke-opacity="0.25" class="pulse3"/>
+      </g>
+      <g class="float1">
+        <rect x="217" y="51" width="14" height="14" rx="2" fill="#081723" stroke="#21D5F5"/>
+        <circle cx="224" cy="58" r="2.8" fill="#21D5F5" class="pulse2"/>
+      </g>
+      <g class="float2">
+        <circle cx="285" cy="92" r="5" fill="#21D5F5" filter="url(#softGlow)"/>
+        <circle cx="285" cy="92" r="14" fill="none" stroke="#21D5F5" stroke-opacity="0.26" class="pulse"/>
+      </g>
+      <g class="float3">
+        <circle cx="165" cy="106" r="4" fill="#B6F5FF"/>
+        <circle cx="195" cy="144" r="4" fill="#B6F5FF"/>
+        <circle cx="254" cy="132" r="4" fill="#B6F5FF"/>
+      </g>
+    </g>
+
+    <g transform="translate(34 188)">
+      <rect x="0" y="0" width="86" height="6" rx="3" fill="#123246"/>
+      <rect x="0" y="0" width="86" height="6" rx="3" fill="url(#accent)" class="barA"/>
+      <rect x="98" y="0" width="58" height="6" rx="3" fill="#123246"/>
+      <rect x="98" y="0" width="58" height="6" rx="3" fill="url(#accent)" class="barB"/>
+      <rect x="168" y="0" width="110" height="6" rx="3" fill="#123246"/>
+      <rect x="168" y="0" width="110" height="6" rx="3" fill="url(#accent)" class="barC"/>
+    </g>
+
+    <text x="290" y="178" font-size="10" text-anchor="end" fill="#8FA9BC">security · systems · code</text>
+  </g>
+
+  <!-- frame decorations -->
+  <g stroke="#1ED4F6" stroke-opacity="0.8" filter="url(#softGlow)">
+    <path d="M30 30h28"/>
+    <path d="M30 30v28"/>
+    <path d="M1170 30h-28"/>
+    <path d="M1170 30v28"/>
+    <path d="M30 290h28"/>
+    <path d="M30 290v-28"/>
+    <path d="M1170 290h-28"/>
+    <path d="M1170 290v-28"/>
+  </g>
+
+  <!-- small ambient particles -->
+  <g fill="#22D5F6" opacity="0.65">
+    <circle cx="732" cy="43" r="1.5" class="pulse2"/>
+    <circle cx="1094" cy="278" r="1.4" class="pulse"/>
+    <circle cx="692" cy="263" r="1.3" class="pulse3"/>
+    <circle cx="1005" cy="44" r="1.6" class="pulse"/>
+    <circle cx="1135" cy="74" r="1.3" class="pulse2"/>
+  </g>
+</svg>
