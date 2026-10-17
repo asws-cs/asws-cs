@@ -1,5 +1,7 @@
 <div align="center">
 
+![Ali Sabah Wadi](./assets/header.svg)
+
 # Ali Sabah Wadi
 
 ### Cybersecurity Engineering Student · Software Developer
